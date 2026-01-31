@@ -2,33 +2,56 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Vaishnavi Enterprises | Used Cars & Finance</title>
+  <title>Vaishnavi Enterprises | Used Cars & Car Finance in Hyderabad</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEO -->
+  <meta name="description" content="Used cars and car finance for new & second-hand vehicles in Hyderabad. Fast approval. Call 9000225736.">
+  <meta name="keywords" content="used cars Hyderabad, second hand cars, car finance Hyderabad, car loan">
+  <meta name="author" content="Vaishnavi Enterprises">
+
   <link rel="stylesheet" href="style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Google Analytics (replace G-XXXXXXXXXX) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXXXXX');
+  </script>
 </head>
 <body>
 
 <header>
   <div class="container header">
     <img src="logo.svg" class="logo">
-    <a href="tel:9000225736" class="call">📞 9000225736</a>
+    <div class="header-right">
+      <button class="lang-btn" onclick="toggleLang()">EN / اردو</button>
+      <a href="tel:9000225736" class="call">📞 9000225736</a>
+    </div>
   </div>
 </header>
 
 <section class="hero">
-  <h1>Find Your Car. <br> Get It Fast.</h1>
-  <p>Second-hand cars available • Finance for new & used cars</p>
+  <h1>Get Your Car<br>Faster Than You Think</h1>
+  <p>Used cars available • Instant finance for new & used cars</p>
   <div class="hero-actions">
     <a href="#search" class="btn primary">Search Cars</a>
-    <a href="https://wa.me/919000225736" class="btn secondary" target="_blank">WhatsApp Now</a>
+    <a href="https://wa.me/919000225736" class="btn secondary" target="_blank">WhatsApp</a>
   </div>
+</section>
+
+<section class="trust-badges">
+  <div>⭐ 500+ Happy Customers</div>
+  <div>🏦 Finance from Leading Banks</div>
+  <div>⚡ Fast Approval</div>
 </section>
 
 <section id="search" class="search-section container">
   <h2>Search Available Cars</h2>
-  <input type="text" id="carSearch" placeholder="Type brand (Hyundai, Audi, Skoda, Verna...)">
-
+  <input type="text" id="carSearch" placeholder="Type brand (Hyundai, Audi, Skoda...)">
   <ul id="carList">
     <li>Hyundai</li>
     <li>Hyundai Verna</li>
@@ -42,24 +65,23 @@
     <li>Audi</li>
     <li>Mercedes</li>
   </ul>
-
-  <p class="hint">Can’t find your car? <a href="https://wa.me/919000225736" target="_blank">WhatsApp us</a></p>
 </section>
 
 <section class="emi">
-  <h2>Check EMI Instantly</h2>
+  <h2>EMI Calculator</h2>
   <div class="emi-box">
     <input type="number" id="amount" placeholder="Loan Amount (₹)">
     <input type="number" id="rate" placeholder="Interest Rate (%)">
     <input type="number" id="months" placeholder="Tenure (months)">
     <button onclick="calculateEMI()">Calculate EMI</button>
     <p id="emiResult"></p>
+    <p class="note">*Final EMI depends on bank & eligibility</p>
   </div>
 </section>
 
 <section class="loan container">
-  <h2>Get Your Car Faster</h2>
-  <p>Fill this form — we’ll contact you immediately</p>
+  <h2>Apply Now — Get a Call in Minutes</h2>
+  <p>Fill once. We handle everything.</p>
   <form onsubmit="sendForm(event)">
     <input type="text" id="name" placeholder="Your Name" required>
     <input type="tel" id="phone" placeholder="Phone Number" required>
@@ -68,7 +90,7 @@
       <option>Used Car Finance</option>
       <option>New Car Finance</option>
     </select>
-    <button type="submit">Submit & WhatsApp</button>
+    <button type="submit">Get Car Details on WhatsApp</button>
   </form>
 </section>
 
@@ -76,6 +98,11 @@
   <h2>Location</h2>
   <iframe src="https://www.google.com/maps?q=Hyderabad&output=embed"></iframe>
 </section>
+
+<div id="helpPrompt" class="help-prompt">
+  <p>Need help choosing a car or loan?</p>
+  <a href="https://wa.me/919000225736" target="_blank">Chat on WhatsApp</a>
+</div>
 
 <a href="https://wa.me/919000225736" class="whatsapp" target="_blank">💬</a>
 
@@ -86,4 +113,3 @@
 <script src="script.js"></script>
 </body>
 </html>
-
