@@ -12,21 +12,12 @@
 
   <rect width="360" height="90" rx="16" fill="url(#grad)"/>
 
-  <text x="180" y="52"
+  <text x="180" y="58"
         text-anchor="middle"
-        font-size="26"
+        font-size="28"
         font-weight="700"
         fill="#ffffff"
         style="font-family: Arial, Helvetica, sans-serif;">
     Vaishnavi Enterprises
-  </text>
-
-  <text x="180" y="74"
-        text-anchor="middle"
-        font-size="12"
-        fill="#ffffff"
-        opacity="0.9"
-        style="font-family: Arial, Helvetica, sans-serif;">
-    Used Cars &amp; Car Finance
   </text>
 </svg>
