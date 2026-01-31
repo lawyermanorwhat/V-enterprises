@@ -1,0 +1,25 @@
+.emi, .loan {
+  background: #fff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.emi-box, .loan form {
+  max-width: 400px;
+  margin: auto;
+}
+
+.emi-box input, .loan input, .loan select {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+}
+
+.emi-box button, .loan button {
+  width: 100%;
+  padding: 12px;
+  background: #ffd166;
+  border: none;
+  font-weight: 600;
+  cursor: pointer;
+}
