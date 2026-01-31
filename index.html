@@ -38,7 +38,29 @@ fbq('init','XXXXXXXXXXXXXXX'); fbq('track','PageView');
 </head>
 
 <body>
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
 
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyDhpRwR7jxfPylvAm8brfmgqEJ625pykGU",
+    authDomain: "v-enterprises-a91dd.firebaseapp.com",
+    projectId: "v-enterprises-a91dd",
+    storageBucket: "v-enterprises-a91dd.firebasestorage.app",
+    messagingSenderId: "558511484954",
+    appId: "1:558511484954:web:a95d378a8cce22bcd5a1a3",
+    measurementId: "G-4PGHHMRRGJ"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
 <!-- LOADER -->
 <div id="loader"><div class="spinner"></div></div>
 
