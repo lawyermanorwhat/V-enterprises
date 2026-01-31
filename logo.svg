@@ -1,19 +1,32 @@
-<svg width="360" height="90" viewBox="0 0 360 90" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="360" height="90" viewBox="0 0 360 90"
+     role="img" aria-label="Vaishnavi Enterprises Logo">
+
   <defs>
-    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+    <linearGradient id="grad" gradientUnits="userSpaceOnUse"
+      x1="0" y1="0" x2="360" y2="90">
       <stop offset="0%" stop-color="#ff6a00"/>
       <stop offset="100%" stop-color="#ee0979"/>
     </linearGradient>
   </defs>
-  <rect width="360" height="90" rx="16" fill="url(#g)"/>
-  <text x="180" y="50" text-anchor="middle"
-        font-size="26" fill="#ffffff"
-        font-family="Poppins, Arial"
-        font-weight="700">
+
+  <rect width="360" height="90" rx="16" fill="url(#grad)"/>
+
+  <text x="180" y="52"
+        text-anchor="middle"
+        font-size="26"
+        font-weight="700"
+        fill="#ffffff"
+        style="font-family: Arial, Helvetica, sans-serif;">
     Vaishnavi Enterprises
   </text>
-  <text x="180" y="72" text-anchor="middle"
-        font-size="12" fill="#ffffff" opacity="0.9">
-    Used Cars & Car Finance
+
+  <text x="180" y="74"
+        text-anchor="middle"
+        font-size="12"
+        fill="#ffffff"
+        opacity="0.9"
+        style="font-family: Arial, Helvetica, sans-serif;">
+    Used Cars &amp; Car Finance
   </text>
 </svg>
