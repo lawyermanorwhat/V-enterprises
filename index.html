@@ -1,28 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Vaishnavi Enterprises | Used Cars & Car Finance in Hyderabad</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Vaishnavi Enterprises | Hyderabad</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO -->
-  <meta name="description" content="Used cars and car finance for new & second-hand vehicles in Hyderabad. Fast approval. Call 9000225736.">
-  <meta name="keywords" content="used cars Hyderabad, second hand cars, car finance Hyderabad, car loan">
-  <meta name="author" content="Vaishnavi Enterprises">
+<meta name="description" content="Vaishnavi Enterprises Hyderabad. Fast assistance, finance help, trusted service. Call 9000225736">
+<meta name="keywords" content="Vaishnavi Enterprises Hyderabad">
+<meta name="author" content="Vaishnavi Enterprises">
 
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="icon" href="favicon.svg">
+<link rel="stylesheet" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- Google Analytics (replace G-XXXXXXXXXX) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-XXXXXXXXXX');
-  </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+window.dataLayer=window.dataLayer||[];
+function gtag(){dataLayer.push(arguments);}
+gtag('js',new Date()); gtag('config','G-XXXXXXXXXX');
+</script>
+
+<!-- Facebook Pixel -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window,document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','XXXXXXXXXXXXXXX'); fbq('track','PageView');
+</script>
 </head>
+
 <body>
+
+<!-- LOADER -->
+<div id="loader"><div class="spinner"></div></div>
 
 <header>
   <div class="container header">
@@ -35,63 +51,65 @@
 </header>
 
 <section class="hero">
-  <h1>Get Your Car<br>Faster Than You Think</h1>
-  <p>Used cars available • Instant finance for new & used cars</p>
+  <h1>Get What You Need<br>Without Delay</h1>
+  <p>Fast assistance • Simple process • Trusted service</p>
   <div class="hero-actions">
-    <a href="#search" class="btn primary">Search Cars</a>
+    <a href="#search" class="btn primary">Search</a>
     <a href="https://wa.me/919000225736" class="btn secondary" target="_blank">WhatsApp</a>
   </div>
 </section>
 
-<section class="trust-badges">
-  <div>⭐ 500+ Happy Customers</div>
-  <div>🏦 Finance from Leading Banks</div>
-  <div>⚡ Fast Approval</div>
+<section class="stats">
+  <div><span data-count="500">0</span>+ Happy Clients</div>
+  <div><span data-count="300">0</span>+ Successful Deals</div>
+  <div><span data-count="10">0</span>+ Years Experience</div>
 </section>
 
 <section id="search" class="search-section container">
-  <h2>Search Available Cars</h2>
-  <input type="text" id="carSearch" placeholder="Type brand (Hyundai, Audi, Skoda...)">
+  <h2>Search Availability</h2>
+  <input type="text" id="carSearch" placeholder="Type brand or requirement">
   <ul id="carList">
-    <li>Hyundai</li>
-    <li>Hyundai Verna</li>
-    <li>Skoda</li>
-    <li>Volkswagen</li>
-    <li>Maruti Suzuki</li>
-    <li>Tata</li>
-    <li>Honda</li>
-    <li>Kia</li>
-    <li>Toyota</li>
-    <li>Audi</li>
-    <li>Mercedes</li>
+    <li>Hyundai</li><li>Verna</li><li>Skoda</li><li>Volkswagen</li>
+    <li>Maruti Suzuki</li><li>Tata</li><li>Honda</li>
+    <li>Kia</li><li>Toyota</li><li>Audi</li><li>Mercedes</li>
   </ul>
 </section>
 
 <section class="emi">
   <h2>EMI Calculator</h2>
   <div class="emi-box">
-    <input type="number" id="amount" placeholder="Loan Amount (₹)">
-    <input type="number" id="rate" placeholder="Interest Rate (%)">
-    <input type="number" id="months" placeholder="Tenure (months)">
-    <button onclick="calculateEMI()">Calculate EMI</button>
+    <input id="amount" type="number" placeholder="Amount (₹)">
+    <input id="rate" type="number" placeholder="Interest (%)">
+    <input id="months" type="number" placeholder="Months">
+    <button onclick="calculateEMI()">Calculate</button>
     <p id="emiResult"></p>
-    <p class="note">*Final EMI depends on bank & eligibility</p>
   </div>
 </section>
 
 <section class="loan container">
-  <h2>Apply Now — Get a Call in Minutes</h2>
-  <p>Fill once. We handle everything.</p>
-  <form onsubmit="sendForm(event)">
-    <input type="text" id="name" placeholder="Your Name" required>
-    <input type="tel" id="phone" placeholder="Phone Number" required>
-    <input type="text" id="car" placeholder="Car Brand / Model">
+  <h2>Submit Details</h2>
+  <form id="leadForm">
+    <input id="name" placeholder="Your Name" required>
+    <input id="phone" placeholder="Phone Number" required>
+    <input id="car" placeholder="Requirement / Brand">
     <select id="type">
-      <option>Used Car Finance</option>
-      <option>New Car Finance</option>
+      <option>General Enquiry</option>
+      <option>Finance Assistance</option>
     </select>
-    <button type="submit">Get Car Details on WhatsApp</button>
+    <button type="submit">Send via WhatsApp</button>
   </form>
+</section>
+
+<section class="testimonials">
+  <h2>Customer Reviews</h2>
+  <p>⭐⭐⭐⭐⭐ Smooth & trusted service – Ravi</p>
+  <p>⭐⭐⭐⭐⭐ Quick response – Suresh</p>
+</section>
+
+<section class="gallery">
+  <img src="https://source.unsplash.com/400x300/?car">
+  <img src="https://source.unsplash.com/400x300/?showroom">
+  <img src="https://source.unsplash.com/400x300/?sedan">
 </section>
 
 <section class="location container">
@@ -100,15 +118,18 @@
 </section>
 
 <div id="helpPrompt" class="help-prompt">
-  <p>Need help choosing a car or loan?</p>
-  <a href="https://wa.me/919000225736" target="_blank">Chat on WhatsApp</a>
+  <p>Need help?</p>
+  <a href="https://wa.me/919000225736">Chat on WhatsApp</a>
 </div>
 
-<a href="https://wa.me/919000225736" class="whatsapp" target="_blank">💬</a>
+<a href="https://wa.me/919000225736" class="whatsapp">💬</a>
 
 <footer>
   © 2026 Vaishnavi Enterprises • Hyderabad • 9000225736
 </footer>
+
+<!-- Live Chat -->
+<script src="https://embed.tawk.to/YOUR_ID/1abcdef" async></script>
 
 <script src="script.js"></script>
 </body>
