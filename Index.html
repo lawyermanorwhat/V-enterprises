@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vaishnavi Enterprises | Cars & Finance</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<header>
+  <div class="container header-flex">
+    <img src="logo.svg" class="logo">
+    <a href="tel:9000225736" class="call-btn">📞 9000225736</a>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>Used Cars • New & Used Car Finance</h1>
+  <p>All brands available | Second-hand cars | Easy car loans</p>
+  <div class="hero-actions">
+    <a href="tel:9000225736" class="primary-btn">Call Now</a>
+    <a href="https://wa.me/919000225736" class="secondary-btn" target="_blank">WhatsApp</a>
+  </div>
+</section>
+
+<section class="cars container">
+  <h2>Available Cars (Used & Finance)</h2>
+
+  <div class="car-grid">
+
+    <!-- CAR CARD TEMPLATE -->
+    <div class="car-card">
+      <img src="https://source.unsplash.com/500x300/?hyundai,car">
+      <h3>Hyundai / Verna / i20</h3>
+      <p>Used cars available • Loan support</p>
+      <div class="card-actions">
+        <a href="tel:9000225736">📞 Call</a>
+        <a href="https://wa.me/919000225736" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://source.unsplash.com/500x300/?skoda,car">
+      <h3>Skoda / Volkswagen</h3>
+      <p>Premium used cars • EMI available</p>
+      <div class="card-actions">
+        <a href="tel:9000225736">📞 Call</a>
+        <a href="https://wa.me/919000225736" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://source.unsplash.com/500x300/?audi,car">
+      <h3>Audi (Selected Models)</h3>
+      <p>Luxury used cars • Finance support</p>
+      <div class="card-actions">
+        <a href="tel:9000225736">📞 Call</a>
+        <a href="https://wa.me/919000225736" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://source.unsplash.com/500x300/?mercedes,car">
+      <h3>Mercedes (Selected Models)</h3>
+      <p>Certified used cars • Easy loans</p>
+      <div class="card-actions">
+        <a href="tel:9000225736">📞 Call</a>
+        <a href="https://wa.me/919000225736" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+
+    <div class="car-card">
+      <img src="https://source.unsplash.com/500x300/?indian,car">
+      <h3>Maruti • Tata • Honda • Kia</h3>
+      <p>All Indian brands • Finance available</p>
+      <div class="card-actions">
+        <a href="tel:9000225736">📞 Call</a>
+        <a href="https://wa.me/919000225736" target="_blank">💬 WhatsApp</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- EMI CALCULATOR -->
+<section class="emi">
+  <h2>EMI Calculator</h2>
+  <div class="emi-box">
+    <input type="number" id="amount" placeholder="Loan Amount (₹)">
+    <input type="number" id="rate" placeholder="Interest Rate (%)">
+    <input type="number" id="tenure" placeholder="Tenure (months)">
+    <button onclick="calculateEMI()">Calculate EMI</button>
+    <p id="emiResult"></p>
+  </div>
+</section>
+
+<!-- LOAN FORM -->
+<section class="loan">
+  <h2>Apply for Car Loan</h2>
+  <form onsubmit="sendLoanForm(event)">
+    <input type="text" placeholder="Your Name" required>
+    <input type="tel" placeholder="Phone Number" required>
+    <input type="text" placeholder="Car Brand / Model">
+    <select>
+      <option>New Car Finance</option>
+      <option>Used Car Finance</option>
+    </select>
+    <button type="submit">Submit & WhatsApp</button>
+  </form>
+</section>
+
+<section class="location container">
+  <h2>Location</h2>
+  <iframe src="https://www.google.com/maps?q=Hyderabad&output=embed"></iframe>
+</section>
+
+<a href="https://wa.me/919000225736" class="whatsapp-float" target="_blank">💬</a>
+
+<footer>
+  <p>© 2026 Vaishnavi Enterprises | Hyderabad | 9000225736</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
