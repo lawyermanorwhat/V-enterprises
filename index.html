@@ -2,40 +2,26 @@
 <html lang="en">
 <head>
 
-  <!-- Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXP6DZHZ7M"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-TXP6DZHZ7M');
-  </script>
-
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- SEO TITLE -->
+  <!-- SEO -->
   <title>Vaishnavi Enterprises Hyderabad | Finance & Assistance Services</title>
-
-  <!-- SEO META -->
-  <meta name="description" content="Vaishnavi Enterprises Hyderabad offers fast finance assistance, EMI help, and trusted services. Call 9000225736 for quick support.">
+  <meta name="description" content="Vaishnavi Enterprises in Hyderabad offers fast finance assistance, EMI help and trusted customer services. Call 9000225736 for quick support.">
   <meta name="keywords" content="Vaishnavi Enterprises Hyderabad, finance assistance Hyderabad, EMI help Hyderabad">
   <meta name="author" content="Vaishnavi Enterprises">
   <meta name="robots" content="index, follow">
-  <meta name="language" content="English">
+
+  <!-- Local SEO -->
   <meta name="geo.region" content="IN-TG">
   <meta name="geo.placename" content="Hyderabad">
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- Google Verification (PASTE YOUR CODE WHEN YOU GET IT) -->
-  <!-- <meta name="google-site-verification" content="PASTE_CODE_HERE"> -->
-
   <!-- Styles -->
-  <link rel="icon" href="./favicon.svg">
+  <link rel="icon" href="./assets/favicon.svg">
   <link rel="stylesheet" href="./style.css">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
-  <!-- STRUCTURED DATA (VERY IMPORTANT FOR GOOGLE) -->
+  <!-- Structured Data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -48,10 +34,8 @@
       "addressCountry": "IN"
     },
     "telephone": "+91-9000225736",
-    "url": "https://your-project.web.app",
-    "sameAs": [
-      "https://wa.me/919000225736"
-    ]
+    "url": "https://your-site.web.app",
+    "sameAs": ["https://wa.me/919000225736"]
   }
   </script>
 
@@ -59,96 +43,100 @@
 
 <body>
 
-<!-- LOADER -->
-<div id="loader"><div class="spinner"></div></div>
-
-<header>
-  <div class="container header">
-    <img src="./logo.svg" class="logo" alt="Vaishnavi Enterprises">
-    <div class="header-right">
-      <a href="tel:9000225736" class="call">📞 9000225736</a>
-    </div>
+<!-- HEADER -->
+<header class="header">
+  <div class="container">
+    <img src="./assets/logo.svg" class="logo" alt="Vaishnavi Enterprises">
+    <a href="tel:9000225736" class="call-btn">📞 9000225736</a>
   </div>
 </header>
 
+<!-- HERO -->
 <section class="hero">
-  <h1>Get What You Need Without Delay</h1>
-  <p>Fast assistance • Simple process • Trusted service</p>
+  <h1>Fast Finance & Assistance Services in Hyderabad</h1>
+  <p>Simple Process • Trusted Support • Quick Response</p>
   <div class="hero-actions">
-    <a href="#search" class="btn primary">Search</a>
-    <a href="https://wa.me/919000225736" class="btn secondary" target="_blank">WhatsApp</a>
+    <a href="#services" class="btn primary">Our Services</a>
+    <a href="https://wa.me/919000225736" class="btn secondary">WhatsApp Now</a>
   </div>
 </section>
 
-<section class="stats">
-  <div><span data-count="500">0</span>+ Happy Clients</div>
-  <div><span data-count="300">0</span>+ Successful Deals</div>
-  <div><span data-count="10">0</span>+ Years Experience</div>
+<!-- SERVICES -->
+<section id="services" class="services container">
+  <h2>Our Services</h2>
+  <div class="service-grid">
+    <div>Finance Assistance</div>
+    <div>EMI Support</div>
+    <div>Documentation Help</div>
+    <div>Customer Consultation</div>
+    <div>Quick Processing</div>
+    <div>Trusted Guidance</div>
+  </div>
 </section>
 
-<section id="search" class="search-section container">
-  <h2>Search Availability</h2>
-  <input type="text" id="carSearch" placeholder="Type brand or requirement">
-  <ul id="carList">
-    <li>Hyundai</li><li>Skoda</li><li>Volkswagen</li><li>Maruti Suzuki</li>
-    <li>Tata</li><li>Honda</li><li>Kia</li><li>Toyota</li>
+<!-- WHY US -->
+<section class="why-us">
+  <h2>Why Choose Vaishnavi Enterprises?</h2>
+  <ul>
+    <li>✔ Simple & Transparent Process</li>
+    <li>✔ Fast Response Time</li>
+    <li>✔ Trusted Local Service</li>
+    <li>✔ Customer-First Approach</li>
   </ul>
 </section>
 
-<section class="emi">
+<!-- EMI CALCULATOR -->
+<section class="emi container">
   <h2>EMI Calculator</h2>
   <div class="emi-box">
     <input id="amount" type="number" placeholder="Amount (₹)">
     <input id="rate" type="number" placeholder="Interest (%)">
     <input id="months" type="number" placeholder="Months">
-    <button onclick="calculateEMI()">Calculate</button>
+    <button onclick="calculateEMI()">Calculate EMI</button>
     <p id="emiResult"></p>
   </div>
 </section>
 
-<section class="loan container">
-  <h2>Submit Details</h2>
+<!-- LEAD FORM -->
+<section class="lead container">
+  <h2>Get Assistance Now</h2>
   <form id="leadForm">
     <input id="name" placeholder="Your Name" required>
     <input id="phone" placeholder="Phone Number" required>
-    <input id="car" placeholder="Requirement / Brand">
-    <select id="type">
+    <select id="service">
       <option>General Enquiry</option>
       <option>Finance Assistance</option>
+      <option>EMI Support</option>
     </select>
     <button type="submit">Send via WhatsApp</button>
   </form>
 </section>
 
-<section class="testimonials">
-  <h2>Customer Reviews</h2>
-  <p>⭐⭐⭐⭐⭐ Smooth & trusted service – Ravi</p>
-  <p>⭐⭐⭐⭐⭐ Quick response – Suresh</p>
-</section>
-
+<!-- LOCATION -->
 <section class="location container">
-  <h2>Our Location</h2>
+  <h2>Serving Hyderabad</h2>
   <iframe src="https://www.google.com/maps?q=Hyderabad&output=embed"></iframe>
 </section>
 
-<!-- 🔥 LOCAL SEO CONTENT -->
+<!-- LOCAL SEO CONTENT -->
 <section class="local-seo container">
   <h2>Vaishnavi Enterprises – Hyderabad</h2>
   <p>
-    Vaishnavi Enterprises is a trusted service provider in Hyderabad, Telangana.
-    We offer fast finance assistance, EMI support, and customer help with a simple
-    and transparent process. Call <strong>9000225736</strong> for quick assistance.
+    Vaishnavi Enterprises is a trusted service provider in Hyderabad offering
+    finance assistance, EMI help, and customer support with a simple and
+    transparent process. Call 9000225736 for quick assistance.
   </p>
 </section>
 
+<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/919000225736" class="whatsapp">💬</a>
 
+<!-- FOOTER -->
 <footer>
-  © 2026 Vaishnavi Enterprises • Hyderabad • 9000225736
+  © 2026 Vaishnavi Enterprises | Hyderabad
 </footer>
 
 <script src="./script.js" defer></script>
-
 </body>
 </html>
 
