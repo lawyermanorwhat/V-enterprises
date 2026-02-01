@@ -1,52 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-TXP6DZHZ7M"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-TXP6DZHZ7M');
-</script>
-<meta charset="UTF-8">
-<title>Vaishnavi Enterprises | Hyderabad</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-TXP6DZHZ7M"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-TXP6DZHZ7M');
+  </script>
 
-<meta name="description" content="Vaishnavi Enterprises Hyderabad. Fast assistance, finance help, trusted service. Call 9000225736">
-<meta name="keywords" content="Vaishnavi Enterprises Hyderabad">
-<meta name="author" content="Vaishnavi Enterprises">
+  <meta charset="UTF-8">
+  <title>Vaishnavi Enterprises | Hyderabad</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="icon" href="favicon.svg">
-<link rel="stylesheet" href="style.css">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <meta name="description" content="Vaishnavi Enterprises Hyderabad. Fast assistance, finance help, trusted service. Call 9000225736">
+  <meta name="keywords" content="Vaishnavi Enterprises Hyderabad">
+  <meta name="author" content="Vaishnavi Enterprises">
 
+  <!-- IMPORTANT: relative paths -->
+  <link rel="icon" href="./favicon.svg">
+  <link rel="stylesheet" href="./style.css">
 
-<!-- Facebook Pixel -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window,document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init','XXXXXXXXXXXXXXX'); fbq('track','PageView');
-</script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Facebook Pixel -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}
+    (window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','XXXXXXXXXXXXXXX');
+    fbq('track','PageView');
+  </script>
+
 </head>
 
 <body>
+
+<!-- Firebase (safe to keep) -->
 <script type="module">
-  // Import the functions you need from the SDKs you need
   import { initializeApp } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-app.js";
   import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.8.0/firebase-analytics.js";
-  // TODO: Add SDKs for Firebase products that you want to use
-  // https://firebase.google.com/docs/web/setup#available-libraries
 
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
   const firebaseConfig = {
     apiKey: "AIzaSyDhpRwR7jxfPylvAm8brfmgqEJ625pykGU",
     authDomain: "v-enterprises-a91dd.firebaseapp.com",
@@ -57,16 +58,16 @@ fbq('init','XXXXXXXXXXXXXXX'); fbq('track','PageView');
     measurementId: "G-4PGHHMRRGJ"
   };
 
-  // Initialize Firebase
   const app = initializeApp(firebaseConfig);
-  const analytics = getAnalytics(app);
+  getAnalytics(app);
 </script>
+
 <!-- LOADER -->
 <div id="loader"><div class="spinner"></div></div>
 
 <header>
   <div class="container header">
-    <img src="logo.svg" class="logo">
+    <img src="./logo.svg" class="logo" alt="Vaishnavi Enterprises">
     <div class="header-right">
       <button class="lang-btn" onclick="toggleLang()">EN / اردو</button>
       <a href="tel:9000225736" class="call">📞 9000225736</a>
@@ -155,6 +156,9 @@ fbq('init','XXXXXXXXXXXXXXX'); fbq('track','PageView');
 <!-- Live Chat -->
 <script src="https://embed.tawk.to/YOUR_ID/1abcdef" async></script>
 
-<script src="script.js"></script>
+<!-- MAIN JS -->
+<script src="./script.js" defer></script>
+
 </body>
 </html>
+
